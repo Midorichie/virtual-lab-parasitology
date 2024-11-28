@@ -1,0 +1,30 @@
+[project]
+name = 'virtual-lab-parasitology'
+description = 'A blockchain-based virtual laboratory for parasitology research'
+authors = []
+telemetry = false
+requirements = []
+
+[contracts.experiments]
+path = 'contracts/experiments.clar'
+clarity_version = 2
+epoch = 2.4
+
+[contracts.laboratory]
+path = 'contracts/laboratory.clar'
+clarity_version = 2
+epoch = 2.4
+
+[contracts.data-storage]
+path = 'contracts/data-storage.clar'
+clarity_version = 2
+epoch = 2.4
+
+[repl.analysis]
+checker = true
+
+[repl.analysis.checker]
+strict = false
+trusted_sender = false
+trusted_caller = false
+callee_filter = false
